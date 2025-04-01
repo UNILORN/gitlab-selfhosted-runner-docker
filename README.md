@@ -87,3 +87,9 @@ MIT
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+## References
+
+Special thanks to the following resources that helped with this project:
+
+- [GitLabセルフホストランナー Docker構成例](https://note.shiftinc.jp/n/n199fd81ce315) - Reference for Docker configuration
