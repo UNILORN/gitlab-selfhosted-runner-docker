@@ -1,0 +1,19 @@
+services:
+  runner-manager:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    env_file:
+      - .env
+    deploy:
+      mode: replicated
+      replicas: 10
+    networks:
+      - runner-network
+
+networks:
+  runner-network:
+    driver: bridge
